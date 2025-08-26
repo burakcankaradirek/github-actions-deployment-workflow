@@ -19,10 +19,11 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v2  # v1 yerine v2
+        uses: actions/upload-pages-artifact@v3  # v1 yerine v2
 
         with:
           path: './'
 
       - name: Deploy
         uses: actions/deploy-pages@v1
+
